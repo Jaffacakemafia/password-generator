@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
 	}
 
 	
-	char* password = (char*)malloc((passwordLength + 1) * sizeof(char));
+	char* password = (char*)malloc((passwordLength + 1) * sizeof(char)); //Add extra character for null terminating character.
 	if (password == NULL) {
 		printf("Memory not allocated for password.\n");
 		exit(0);
